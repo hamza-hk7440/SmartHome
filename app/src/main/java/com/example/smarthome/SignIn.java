@@ -99,6 +99,7 @@ public class SignIn extends AppCompatActivity {
                                 reference.child(uid).setValue(helperClass);
                                 Toast.makeText(SignIn.this,"signup succesfull ",Toast.LENGTH_LONG).show();
                                 Intent intent=new Intent(SignIn.this, LogIn.class);
+                                intent.putExtra("name",name);
                                 startActivity(intent);
 
                             }else{
