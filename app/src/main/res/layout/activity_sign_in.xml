@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:autoSizeTextType="uniform"
+        android:lineSpacingExtra="36dp"
+        android:text="Welcome!\nLet us help you control your house"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_24"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/input_field"
+        android:hint="Enter your full name"
+        android:paddingLeft="@dimen/dp_16"
+        android:textColorHint="@color/inputtext"
+        android:textSize="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@+id/houseSignEmail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_editor_absoluteX="@dimen/dp_33"
+        app:layout_editor_absoluteY="259dp" />
+
+    <EditText
+        android:id="@+id/houseSignEmail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/input_field"
+        android:hint="Enter your email"
+        android:paddingLeft="@dimen/dp_16"
+        android:textColorHint="@color/inputtext"
+        android:textSize="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@+id/houseSignPwd"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_editor_absoluteX="@dimen/dp_33"
+        app:layout_editor_absoluteY="357dp" />
+
+    <EditText
+        android:id="@+id/houseSignPwd"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/input_field"
+        android:hint="Enter paasword"
+        android:paddingLeft="@dimen/dp_16"
+        android:textColorHint="@color/inputtext"
+        android:textSize="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@+id/confPass"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/houseSignEmail"
+        app:layout_editor_absoluteX="@dimen/dp_33"
+        app:layout_editor_absoluteY="455dp" />
+
+    <EditText
+        android:id="@+id/confPass"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/input_field"
+        android:hint="Confirm password"
+        android:paddingLeft="@dimen/dp_16"
+        android:textColorHint="@color/inputtext"
+        android:textSize="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@+id/signInBtn"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/houseSignPwd"
+        app:layout_editor_absoluteX="@dimen/dp_33"
+        app:layout_editor_absoluteY="553dp" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@null"
+        android:stateListAnimator="@null"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_24"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/loginRow"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/confPass"
+        app:layout_editor_absoluteX="@dimen/dp_33"
+        app:layout_editor_absoluteY="666dp" />
+
+    <LinearLayout
+        android:id="@+id/loginRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/signInBtn"
+        app:layout_editor_absoluteX="70dp"
+        app:layout_editor_absoluteY="800dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/loginRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:clickable="true"
+            android:focusable="true"
+            android:text=" Log in"
+            android:textColor="#C3934F"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="64dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="223dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="776dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="33dp"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

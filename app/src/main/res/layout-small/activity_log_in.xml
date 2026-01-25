@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LogIn"
+        android:background="@color/backcolor">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingExtra="20dp"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_24"
+            android:text="Welcome back!\nLet's continue to control your house"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="26dp"
+            app:layout_editor_absoluteY="96dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/editText5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/illustration" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/input_field"
+            android:hint="Enter your email"
+            android:paddingLeft="@dimen/dp_16"
+            android:textColorHint="@color/inputtext"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintBottom_toTopOf="@+id/editText6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_editor_absoluteX="@dimen/dp_35"
+            app:layout_editor_absoluteY="406dp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/input_field"
+            android:hint="Enter Your password"
+            android:paddingLeft="@dimen/dp_16"
+            android:textColorHint="@color/inputtext"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editText5"
+            app:layout_editor_absoluteX="@dimen/dp_35"
+            app:layout_editor_absoluteY="504dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="78dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:text="Log in"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editText6"
+            app:layout_editor_absoluteX="@dimen/dp_33"
+            app:layout_editor_absoluteY="663dp" />
+
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:text="Don't have an account?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/button2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:clickable="true"
+                android:focusable="true"
+                android:text=" Sign up"
+                android:textAlignment="center"
+                android:textColor="#C3934F"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.51"
+
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/txt"
+                />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="33dp"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

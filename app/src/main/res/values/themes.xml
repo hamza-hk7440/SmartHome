@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base theme -->
+    <style name="Base.Theme.Smarthome" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Must have a window background to avoid black screen -->
+        <item name="android:windowBackground">@color/backcolor</item>
+    </style>
+
+    <style name="Theme.Smarthome" parent="Base.Theme.Smarthome"/>
+</resources>

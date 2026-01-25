@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:background="@color/backcolor"
+        android:layout_height="wrap_content"
+        tools:context=".SignIn">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/input_field"
+            android:hint="Enter your email"
+            android:paddingLeft="@dimen/dp_16"
+            android:textColorHint="@color/inputtext"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintBottom_toTopOf="@+id/editText3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            app:layout_editor_absoluteX="@dimen/dp_33"
+            app:layout_editor_absoluteY="357dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingExtra="20dp"
+            android:text="Welcome!\nLet us help you control your house"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/input_field"
+            android:hint="Enter your full name"
+            android:paddingLeft="@dimen/dp_16"
+            android:textColorHint="@color/inputtext"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintBottom_toTopOf="@+id/editText2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_editor_absoluteX="@dimen/dp_33"
+            app:layout_editor_absoluteY="259dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/input_field"
+            android:hint="Enter paasword"
+            android:paddingLeft="@dimen/dp_16"
+            android:textColorHint="@color/inputtext"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintBottom_toTopOf="@+id/editText4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            app:layout_editor_absoluteX="@dimen/dp_33"
+            app:layout_editor_absoluteY="455dp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/input_field"
+            android:hint="Confirm password"
+            android:paddingLeft="@dimen/dp_16"
+            android:textColorHint="@color/inputtext"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/editText3"
+            app:layout_editor_absoluteX="@dimen/dp_33"
+            app:layout_editor_absoluteY="553dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/editText4"
+            app:layout_editor_absoluteX="@dimen/dp_33"
+            app:layout_editor_absoluteY="666dp"
+            app:layout_constraintBottom_toTopOf="@id/al"
+            />
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="64dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="223dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="776dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="64dp"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.89" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="64dp"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+        <TextView
+            android:id="@+id/al"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:text="Already have an account?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintStart_toStartOf="@+id/guideline20"
+            app:layout_constraintTop_toBottomOf="@id/button"
+            tools:layout_editor_absoluteY="350dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvLoginogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:clickable="true"
+            android:focusable="true"
+            android:text=" Log in"
+            android:textAlignment="center"
+            android:textColor="#C3934F"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.51"
+
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@id/al" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

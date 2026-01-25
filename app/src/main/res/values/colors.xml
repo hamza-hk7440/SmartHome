@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="backgroundwelcomecolor">#e5efec</color>
+    <color name="orange">#FC7929</color>
+    <color name="black">#FF000000</color>
+    <color name="color_27_26_24">#FF1B1A18</color>
+    <color name="color_47_46_65">#FF2F2E41</color>
+    <color name="color_63_61_86">#FF3F3D56</color>
+    <color name="button_back">#FFC3934F</color>
+    <color name="color_209_209_209">#FFD1D1D1</color>
+    <color name="color_216_194_170">#FFD8C2AA</color>
+    <color name="color_225_213_201">#FFE1D5C9</color>
+    <color name="color_232_232_232">#FFE8E8E8</color>
+    <color name="color_245_245_245">#FFF5F5F5</color>
+    <color name="color_249_168_38">#FFF9A826</color>
+    <color name="color_255_182_182">#FFFFB6B6</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backcolor">#E1D5C9</color>
+    <color name="inputback">#FCFBFA</color>
+    <color name="inputtext">#333333</color>
+</resources>
+
+

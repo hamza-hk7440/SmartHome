@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backcolor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ================= TOP AREA ================= -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:background="@drawable/homeshape"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/user_head"
+            app:layout_constraintTop_toTopOf="@id/imageView3"
+            app:layout_constraintBottom_toBottomOf="@id/imageView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/houseName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="welcome Hamza Khlaief"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/imageView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- ================= TITLE ================= -->
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textofbedrooms"
+            android:text="Choose the room you want to manage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/houseName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- ================= ROOM 1 ================= -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roomBedroom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconBedroom"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bedroom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <Button
+                android:id="@+id/bedroombtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="Bedrooms"
+                android:textSize="9sp"
+                android:textColor="@color/black"
+                android:background="@drawable/roomsbutton"
+                app:backgroundTint="@null"
+                app:layout_constraintStart_toEndOf="@id/iconBedroom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="12dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ================= ROOM 2 ================= -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roomKitchen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/roomBedroom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconKitchen"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/kitchen"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <Button
+                android:id="@+id/kitchenbtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="Kitchen"
+                android:textSize="9sp"
+                android:textColor="@color/black"
+                android:background="@drawable/roomsbutton"
+                app:backgroundTint="@null"
+                app:layout_constraintStart_toEndOf="@id/iconKitchen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="12dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ================= ROOM 3 ================= -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roomBathroom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/roomKitchen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconBathroom"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bath"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <Button
+                android:id="@+id/bathroombtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="Bathroom"
+                android:textSize="9sp"
+                android:textColor="@color/black"
+                android:background="@drawable/roomsbutton"
+                app:backgroundTint="@null"
+                app:layout_constraintStart_toEndOf="@id/iconBathroom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="12dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ================= ROOM 4 ================= -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roomLiving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/roomBathroom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconLiving"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/living_room"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <Button
+                android:id="@+id/livingroombtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="Living room"
+                android:textSize="9sp"
+                android:textColor="@color/black"
+                android:background="@drawable/roomsbutton"
+                app:backgroundTint="@null"
+                app:layout_constraintStart_toEndOf="@id/iconLiving"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="12dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ================= BOTTOM BAR ================= -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/roomLiving">
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:contentDescription="homepage"
+                android:background="@drawable/homeicon" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/modiericon"
+                android:contentDescription="modifierpage"/>
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/profileicon"
+                android:contentDescription="profilepage"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/roomLiving" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

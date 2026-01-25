@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background track (unreached part) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="8dp"/>
+            <corners android:radius="4dp"/>
+            <solid android:color="#FAF3E1"/> <!-- color of the part NOT reached yet -->
+        </shape>
+    </item>
+
+    <!-- Progressed part -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="8dp"/>
+                <corners android:radius="4dp"/>
+                <solid android:color="#D8C2AA"/> <!-- color of the progressed part -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarthome">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/newicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smarthome">
+        <activity
+            android:name=".LivingAir"
+            android:exported="false" />
+        <activity
+            android:name=".LivingWindow"
+            android:exported="false" />
+        <activity
+            android:name=".LivingDoor"
+            android:exported="false" />
+        <activity
+            android:name=".LivingLight"
+            android:exported="false" />
+        <activity
+            android:name=".BathWindow"
+            android:exported="false" />
+        <activity
+            android:name=".BathDoor"
+            android:exported="false" />
+        <activity
+            android:name=".BathLight"
+            android:exported="false" />
+        <activity
+            android:name=".KitchenWindow"
+            android:exported="false" />
+        <activity
+            android:name=".KitchenDoor"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".BathMachine"
+            android:exported="false" />
+        <activity
+            android:name=".LivingRoomTv"
+            android:exported="false" />
+        <activity
+            android:name=".CofeeTreatment"
+            android:exported="false" />
+        <activity
+            android:name=".KitchenCofee"
+            android:exported="false" />
+        <activity
+            android:name=".KitchenLight"
+            android:exported="false" />
+        <activity
+            android:name=".BedroomWindow"
+            android:exported="false" />
+        <activity
+            android:name=".BedroomDoor"
+            android:exported="false" />
+        <activity
+            android:name=".BedroomAir"
+            android:exported="false" />
+        <activity
+            android:name=".BedroomLight"
+            android:exported="false" />
+        <activity
+            android:name=".LivingRoom"
+            android:exported="false" />
+        <activity
+            android:name=".Bath"
+            android:exported="false" />
+        <activity
+            android:name=".Kitchen"
+            android:exported="false" />
+        <activity
+            android:name=".Bedrooms"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" /> <!-- WelcomeActivity is the launcher -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
